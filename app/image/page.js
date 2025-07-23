@@ -4,11 +4,13 @@ import Image from 'next/image'
 
 const page = () => {
   return (
-    <div>
+    <div className="relative w-full h-[500px] flex justify-center">
       <Image
-      className='mx-auto' width={700} height={500}
-      src="https://www.axelerant.com/hubfs/Imported_Blog_Media/nextjs_image1.jpg" 
-      alt="Description of the image" />
+        className="object-cover"
+        src="https://www.axelerant.com/hubfs/Imported_Blog_Media/nextjs_image1.jpg"
+        alt="Description of the image"
+        fill
+      />
     </div>
   )
 }
